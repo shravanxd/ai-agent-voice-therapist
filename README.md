@@ -1,6 +1,13 @@
-# ElevenLabs Self-Improving Voice Agent
+# Evolving Voice Therapist with Real-Time Memory and Feedback
 
-A hackathon starter for building voice AI agents that learn and improve from every conversation using ElevenLabs Conversational AI.
+This repository contains the overall winning project from the ElevenLabs Voice AI Hackathon, hosted by Fractal Labs and Quru AI in New York City on July 26, 2025.
+
+We built an AI therapist that learns and improves after every conversation. After each session, the agent collects feedback, updates its system prompt in real time, and adapts its behavior to sound more empathetic, relevant, and aligned with the user's needs. It also remembers individual users and carries forward context from one session to the next, enabling truly personalized follow-ups.
+
+Our system integrates ElevenLabs Conversational AI with a custom feedback loop that rewrites the agent’s system prompt based on the content and tone of prior conversations. It features session-based memory, version-controlled prompt evolution, and a lightweight voice interface for seamless interaction.
+
+This project demonstrates how voice-based agents can become more intelligent and human-aligned through self-improvement, user memory, and adaptive behavior.
+
 
 ## Quick Start
 
