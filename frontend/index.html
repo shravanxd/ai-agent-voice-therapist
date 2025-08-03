@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Mira Patel • AI Therapist</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="theme-color" content="#6a27e6">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="title-wrap">
+        <div class="title-row">
+          <div class="avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5-2 8-5.5 8-10 0-2.2-1-4.2-2.6-5.6-1.3 2.6-3.3 4.3-5.4 4.3s-4.1-1.7-5.4-4.3C5 7.8 4 9.8 4 12c0 4.5 3 8 8 10Z"/>
+              <path d="M12 10.7c-.7-2.1-2-4-4-5.6"/>
+              <path d="M12 10.7c.7-2.1 2-4 4-5.6"/>
+            </svg>
+          </div>
+          <h1>Dr. Mira Patel</h1>
+        </div>
+
+        <div class="role-line">
+          <span class="role-pill">AI Therapist</span>
+        </div>
+
+        <p class="brief">
+          A supportive, human‑like companion that uses mindfulness and CBT techniques to help you notice thought patterns, regulate emotions, and plan small, doable steps. It can guide grounding, breathing, cognitive reframing, and values‑aligned actions. This assistant offers guidance but is <strong>not a licensed clinician</strong> and does not replace professional care.
+        </p>
+
+        <div class="therapy-tags">
+          <span class="tag">Mindfulness</span>
+          <span class="tag">CBT</span>
+          <span class="tag">Grounding</span>
+          <span class="tag">Cognitive Reframing</span>
+          <span class="tag">Breathing</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="divider" aria-hidden="true">
+      <span class="line"></span>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22c5-2 8-5.5 8-10 0-2.2-1-4.2-2.6-5.6-1.3 2.6-3.3 4.3-5.4 4.3s-4.1-1.7-5.4-4.3C5 7.8 4 9.8 4 12c0 4.5 3 8 8 10Z"/>
+      </svg>
+      <span class="line"></span>
+    </div>
+
+    <!-- Status -->
+    <section class="section">
+      <div class="section-title">Session Status</div>
+      <div class="status-section">
+        <div class="status-item">
+          <span class="status-label">Connection</span>
+          <span id="connectionStatus" class="status-value status-disconnected">Disconnected</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Agent</span>
+          <span id="agentStatus" class="status-value status-listening">Ready</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <div class="button-section">
+      <button id="conversationButton" class="btn-ripple">
+        Start Conversation
+      </button>
+    </div>
+
+    <!-- Version -->
+    <div class="version-info">
+      <div class="version-title">Current Agent Version</div>
+      <div class="version-details" id="versionDetails">
+        Version 1.0 — Mindfulness and CBT-oriented configuration with evolving prompt updates.
+      </div>
+
+      <div class="conversation-meta">
+        <strong>Conversations completed:</strong> <span id="conversationCount">0</span>
+      </div>
+    </div>
+
+    <!-- Collapsible Debug -->
+    <details class="debug-info">
+      <summary>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+        <span class="debug-title">Debug Commands</span>
+      </summary>
+      <div class="debug-details">
+        Open the browser console and try:
+        <ul>
+          <li><code>debugAgent.showEvolvedPrompt()</code> — View current prompt</li>
+          <li><code>debugAgent.getPromptStats()</code> — View prompt statistics</li>
+          <li><code>debugAgent.clearEvolvedPrompt()</code> — Reset to base agent</li>
+        </ul>
+      </div>
+    </details>
+
+    <p class="footer-note">
+      Not for crisis situations. If you’re in immediate danger, call your local emergency number or visit
+      <a href="https://988lifeline.org" target="_blank" rel="noopener noreferrer">988lifeline.org</a>.
+    </p>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
