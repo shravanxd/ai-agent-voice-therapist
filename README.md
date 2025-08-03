@@ -1,6 +1,6 @@
 # Evolving Voice Therapist with Real-Time Memory and Feedback
 
-This repository contains the overall winning project from the ElevenLabs Voice AI Hackathon, hosted by Fractal Labs and Quru AI in New York City on July 26, 2025.
+This repository contains the overall winning project from the ElevenLabs Voice AI Hackathon, hosted by QuruAI and Fractal Labs in New York City on July 26, 2025.
 
 We built an AI therapist that learns and improves after every conversation. After each session, the agent collects feedback, updates its system prompt in real time, and adapts its behavior to sound more empathetic, relevant, and aligned with the user's needs. It also remembers individual users and carries forward context from one session to the next, enabling truly personalized follow-ups.
 
